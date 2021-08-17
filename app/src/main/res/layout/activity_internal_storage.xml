@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical"
+    tools:context=".InternalStorageActivity">
+
+    <TextView
+        style="@style/styleTextView"
+        android:text="@string/latihan_persistence"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        style="@style/styleTextView"
+        android:text="@string/internal_storage"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btnBuatFile"
+        style="@style/whButton"
+        android:text="@string/buat_file" />
+
+    <Button
+        android:id="@+id/btnUbahFile"
+        style="@style/whButton"
+        android:text="@string/ubah_file" />
+
+    <Button
+        android:id="@+id/btnBacaFile"
+        style="@style/whButton"
+        android:text="@string/baca_file" />
+
+    <Button
+        android:id="@+id/btnHapusFile"
+        style="@style/whButton"
+        android:text="@string/hapus_file" />
+
+    <TextView
+        android:id="@+id/tvBacaFile"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/darker_gray"
+        android:ems="10"
+        android:gravity="top|left"
+        android:padding="8dp"
+        android:textColorHint="#000"
+        android:hint="@string/hasil_baca_file"
+        android:inputType="textMultiLine"
+        tools:ignore="RtlHardcoded,TextViewEdits" />
+
+</LinearLayout>
